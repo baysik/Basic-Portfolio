@@ -1,0 +1,68 @@
+/* CSS for index.html */
+
+html, body, #wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+#container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.links {
+    float: right;
+    padding: 5px;
+    font-size: 18px;
+    opacity: .7;
+}
+
+header {
+    padding: 10px;
+    margin-bottom: 20px;
+    background: #ffffff;
+    border-color: #cccccc;
+    background-color: #4aaaa5;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    float: left;
+}
+
+h1 {
+    color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+section {
+    display: inline-block;
+    background: #ffffff;
+    padding: 20px;
+}
+
+#picture {
+    float: left;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+/* CSS for contact.html */
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4aaaa5;
+    color: white;
+    padding: 12px 40px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
