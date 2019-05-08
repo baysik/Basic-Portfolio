@@ -6,23 +6,57 @@ body {
     line-height: 1.5;
     padding: 0;
     margin: 0;
+    height: 100%;
     background-color: #cccccc;
 }
 
 /* Global */
-
-.wrapper {
-    margin: 0 auto;
-    width: 960px;
-    background-color: white;
-    padding: 10px 30px 200px 30px;
-}
-
 .container {
+    min-height: 100%;
     width: 960px;
     margin: 0 auto;
+    position: relative;
+    border: #cccccc 1px solid;
+    background-color: white;
+    padding: 0 0 200px 0;
 }
 
+.container-header {
+    min-height: 100%;
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.container-index {
+    min-height: 100%;
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+    border: #cccccc 1px solid;
+    background-color: white;
+    padding: 0 0 200px 0;
+}
+
+.container-contact {
+    min-height: 100%;
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+    border: #cccccc 1px solid;
+    background-color: white;
+    padding-bottom: 20px;
+}
+
+.container-portfolio {
+    min-height: 100%;
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+    border: #cccccc 1px solid;
+    background-color: white;
+    padding: 0 0 700px 0;
+}
 
 header ul {
     margin:0;
@@ -57,11 +91,20 @@ header li {
     padding: 0 5px 0 5px;
 }
 
+.indexlink {
+    border-right: #dddddd 1px solid;
+}
+
+.contactlink {
+    border-left: #dddddd 1px solid;
+}
+
 header .myname {
     background-color: #4aaaa5;
     color: white;
     float: left;
-    padding: 0px 15px 0px 15px;
+    padding: 5px 15px 5px 15px;
+    margin-top: -10px;
 }
 
 header .myname h1 {
@@ -77,22 +120,36 @@ h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-#about_me {
+/* Page Titles */
+.aboutme {
     color: #4aaaa5;
+    margin-left: 15px;
+    border-bottom: #dddddd 2px solid;
+    margin-right: 15px;
 }
+
+.contact {
+    color: #4aaaa5;
+    margin-left: 15px;
+    border-bottom: #dddddd 2px solid;
+    margin-right: 15px;
+}
+
+.Portfolio {
+    color: #4aaaa5;
+    margin-left: 15px;
+    border-bottom: #dddddd 2px solid;
+    margin-right: 15px;
+}
+
+/* Index Body */
 
 #mainpic {
     float: left;
     padding-right: 20px;
     width: 200px;
-}
-
-section {
-    display: inline-block;
-    width: 960px;
-    background: #ffffff;
-    padding: 10px;
-    margin: 0 auto;
+    margin-left: 12px;
+    margin-top: 5px;
 }
 
 #picture {
@@ -100,16 +157,24 @@ section {
     padding-bottom: 20px;
 }
 
+.bio {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.bio2 {
+    margin: 30px 0px 0px 10px;
+}
 /* CSS for contact.html */
 
 input[type=text], select, textarea {
-    width: 100%;
+    width: 98%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
+    margin-top: 4px;
+    margin-bottom: 2px;
     resize: vertical;
 }
 
@@ -120,19 +185,35 @@ input[type=submit] {
     border: none;
     cursor: pointer;
     font-size: 14px;
+    margin-top: 10px;
+}
+
+.contactform{
+    margin-left: 20px;
 }
 
 /* Boxes */
 
 #boxes {
     margin-top: 20px;
+    position: relative;
+}
+
+.boxtext {
+    padding: 10px;
+    background-color: #4aaaa5;
+    width: 53.2%;
+    margin-left: 91px;
+    margin-top: -70px;
+    position: relative;
 }
 
 #boxes .box {
     float: left;
     text-align: center;
     width: 45%;
-    padding: 0px;
+    padding: 20px;
+    z-index: -1;
 }
 
 #boxes .box img{
@@ -144,6 +225,8 @@ input[type=submit] {
 
 /* Footer */
 footer {
+    position: static;
+    bottom: 0;
     text-align: center;
     font-size: 12px;
     padding: 5px;
@@ -151,4 +234,6 @@ footer {
     background-color: #ccc;
     border-color: #4aaaa5;
     border-top: #4aaaa5 8px solid;
+    width: 100%;
+    overflow: auto;
 }
